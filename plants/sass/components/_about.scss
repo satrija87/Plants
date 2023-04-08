@@ -1,0 +1,86 @@
+.about__container {
+  @include flex;
+  padding: 90px 0 97px;
+
+  @include media-tablet {
+    padding: 0 50px 95px 50px;
+    justify-content: center;
+    gap: 40px;
+  }
+  @include media-mobile {
+    padding: 0 25px 32px 25px;
+    gap: unset;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include media-small {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+}
+.about-content {
+  padding-top: 38px;
+  width: 49%;
+  @include media-tablet {
+    width: 100%;
+    padding-top: 10px;
+  }
+  @include media-mobile {
+    width: 100%;
+    padding-top: 29px;
+  }
+  @include media-small {
+    width: 100%;
+  }
+}
+.about__title {
+  @extend %font-add;
+  color: $color-primary;
+
+  @include media-tablet {
+    text-align: center;
+    padding-right: 21%;
+    padding-left: 21%;
+  }
+  @include media-mobile {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+.orange {
+  color: $color-additional;
+}
+.about__text {
+  @include font(2rem, 3rem, $weight: 400);
+  @extend %font-prim;
+  padding-top: 5px;
+  color: $color-text;
+  @include media-tablet {
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+  @include media-mobile {
+    @include font(1.5rem, 2.5rem, $weight: 400);
+    padding: 0;
+    margin-bottom: 0px;
+  }
+  @include media-small {
+    @include font(1.5rem, 2.5rem, $weight: 400);
+  }
+}
+.about-pic {
+  @include media-tablet {
+    content: url(../assets/images/houseplant-tablet.png);
+    width: 37%;
+  }
+  @include media-mobile {
+    content: url(../assets/images/houseplant-mobile.png);
+    width: 46%;
+  }
+  @include media-small {
+    content: url(../assets/images/houseplant-mobile.png);
+    width: 46%;
+  }
+}

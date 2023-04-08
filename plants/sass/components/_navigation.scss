@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  margin: 0;
+  gap: 47px;
+
+  @include media-mobile {
+    display: none;
+  }
+  @include media-small {
+    display: none;
+  }
+}
+.nav-link {
+  list-style: none;
+  @extend %font-add;
+  @extend %transition;
+  &:hover {
+    color: $color-additional;
+    @extend %transition;
+  }
+  @include media-tablet {
+    @include font(1.6rem, 5rem, $weight: 400);
+  }
+}

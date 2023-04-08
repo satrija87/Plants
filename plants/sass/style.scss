@@ -1,0 +1,25 @@
+@import "../../node_modules/normalize-scss/sass/normalize";
+//base
+@import "base/base";
+@import "base/buttons";
+@import "base/logo";
+@import "base/icons";
+@import "base/burger";
+
+//Abstract
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+
+//Layouts
+@import "layouts/header";
+@import "layouts/container";
+@import "layouts/footer";
+
+//Components
+@import "components/welcome";
+@import "components/navigation";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
+@import "components/contacts";

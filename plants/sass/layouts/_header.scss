@@ -1,0 +1,16 @@
+.header {
+  background-color: $color-background;
+  padding: 20px 0;
+
+  @include media-tablet {
+    padding: 35px 0;
+  }
+  @include media-small {
+    padding: 15px 0;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

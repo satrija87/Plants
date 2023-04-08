@@ -1,0 +1,215 @@
+.service {
+  background-color: $color-background;
+}
+.service-header {
+  width: 82.5%;
+  margin-bottom: 79px;
+  @include flex;
+  @include media-tablet {
+    width: 95%;
+    gap: 43px;
+    margin-bottom: 39px;
+  }
+  @include media-mobile {
+    gap: 41px;
+    margin-bottom: 40px;
+  }
+}
+.service__title {
+  margin: 0;
+  width: 40%;
+  color: $color-primary;
+  @include media-mobile {
+    width: 80%;
+    margin-top: 30px;
+  }
+  @include media-small {
+    width: 80%;
+  }
+}
+.service__container {
+  padding: 40px 0;
+
+  @include media-tablet {
+    padding: 60px 50px 0;
+  }
+  @include media-mobile {
+    padding: 0 25px;
+  }
+  @include media-small {
+    padding: 30px 15px;
+  }
+}
+.service__tags {
+  @include flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  gap: 39px;
+  @include media-tablet {
+    gap: 38px;
+  }
+
+  @include media-mobile {
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: initial;
+  }
+  @include media-small {
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: initial;
+  }
+}
+.tag {
+  @include font(2rem, 2.6rem, $weight: 400);
+  @extend %font-add;
+  @include center;
+  color: $color-additional;
+  width: 161px;
+  padding: 11px 0;
+  border: 1px solid $color-additional;
+  border-radius: 5px;
+  background-color: $color-background;
+  @include media-mobile {
+    @include font(1.5rem, 1.954rem, $weight: 400);
+    padding: 6.5px 0;
+    width: 121px;
+  }
+  @include media-small {
+    @include font(1.5rem, 1.5rem, $weight: 400);
+    padding: 6.5px 0;
+    width: 100px;
+  }
+
+  &_active {
+    color: $color-light;
+    background-color: $color-additional;
+    @extend %transition;
+  }
+}
+.service-cards {
+  @include flex;
+  gap: 55px;
+  padding-bottom: 82px;
+  @include media-tablet {
+    gap: 37px;
+    padding-bottom: 68px;
+    justify-content: space-between;
+  }
+  @include media-mobile {
+    justify-content: center;
+    gap: 35px;
+    padding-bottom: 27px;
+  }
+  @include media-small {
+    justify-content: center;
+    gap: 34.5px;
+    padding-bottom: 27px;
+  }
+}
+.card__title {
+  @include center;
+  color: $color-additional;
+  padding-top: 5px;
+  @include media-tablet {
+    padding-top: 6px;
+  }
+}
+.card__text {
+  @include center;
+  padding-bottom: 17px;
+  color: $color-description;
+  @include media-tablet {
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 19px;
+  }
+  @include media-mobile {
+    margin: 10px 20px 3px;
+    text-align: center;
+  }
+}
+
+.card {
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  width: fit-content;
+  @extend %transition;
+  @include media-tablet {
+    flex-basis: 42.2%;
+  }
+  @include media-mobile {
+    flex-basis: 40%;
+  }
+  @include media-small {
+    flex-basis: 30%;
+  }
+  &_blured {
+    filter: blur(2px);
+  }
+}
+
+.card__image {
+  @include media-tablet {
+    width: 100%;
+  }
+  @include media-small {
+    width: 100%;
+  }
+}
+.card__image1 {
+  @include media-tablet {
+    content: url("../assets/images/first-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/first-mobile.png");
+  }
+}
+.card__image2 {
+  @include media-tablet {
+    content: url("../assets/images/second-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/second-mobile.png");
+  }
+}
+.card__image3 {
+  @include media-tablet {
+    content: url("../assets/images/third-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/third-mobile.png");
+  }
+}
+.card__image4 {
+  @include media-tablet {
+    content: url("../assets/images/fourth-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/fourth-mobile.png");
+  }
+}
+.card__image5 {
+  @include media-tablet {
+    content: url("../assets/images/fifth-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/fifth-mobile.png");
+  }
+}
+.card__image6 {
+  @include media-tablet {
+    content: url("../assets/images/sixth-tablet.png");
+    width: 100%;
+  }
+  @include media-mobile {
+    content: url("../assets/images/sixth-mobile.png");
+  }
+}

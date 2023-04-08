@@ -1,0 +1,54 @@
+@import "../abstract/constants";
+.button {
+  @extend %font-prim;
+  @include font(1.6rem, 2rem, $weight: 400);
+  border-radius: 1rem;
+  padding: 10px 26px;
+  border: 2px solid $color-additional;
+  cursor: pointer;
+  background-color: $color-light;
+  @include media-hover {
+    border: 2px solid $color-additional;
+    background-color: $color-light;
+  }
+
+  @include media-mobile {
+    padding: 6px 16px;
+    @include font(1rem, 2rem, $weight: 400);
+  }
+}
+.button_home {
+  background-color: $color-background;
+}
+.button_home:hover {
+  color: $color-background;
+  background-color: $color-additional;
+}
+.contact-column__button {
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 12px 34px 12px 30px;
+  background-color: $color-light;
+  @include font(2rem, 2.6rem);
+  @extend %font-add;
+  color: $color-additional;
+  @include media-mobile {
+    @include font(1.5rem, 1.954rem);
+    padding: 7px 24px 7px 24px;
+  }
+}
+.adress-block__button {
+  border-radius: 5px;
+  padding: 7px 59px;
+  align-self: center;
+  background-color: $color-background;
+  margin-top: 14px;
+  margin-bottom: 32px;
+  color: $color-description;
+  border: 2px solid $color-additional;
+  @include font(1rem, 1.3rem);
+  @extend %font-add;
+  @include media-mobile {
+    margin-bottom: 0;
+  }
+}

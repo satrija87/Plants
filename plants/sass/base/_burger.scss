@@ -1,0 +1,97 @@
+.burger {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include media-mobile {
+    display: flex;
+  }
+  @include media-small {
+    display: flex;
+  }
+}
+.menu-button {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 24px;
+  gap: 6px;
+
+  @include media-mobile {
+    display: flex;
+    margin-top: 5px;
+  }
+  @include media-small {
+    display: flex;
+  }
+}
+.burger-line {
+  background-color: $color-description;
+  width: 40px;
+  height: 2px;
+}
+
+.burger-menu {
+  display: none;
+  @include media-tablet {
+    top: 0;
+    right: -205px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+  }
+}
+.burger-menu.active {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #edf2ec;
+  padding: 0 20px;
+  width: 300px;
+  top: 0px;
+  right: 0px;
+
+  position: absolute;
+  border-radius: 10px;
+  z-index: 200;
+  transition: 0.5s;
+}
+.burger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.navigation-burger {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 1s;
+}
+.burger-cross {
+  width: 15px;
+  height: 15px;
+  background: url(../assets/icons/cross.png) no-repeat center;
+  background-size: cover;
+}
+.burger-cross:hover {
+  scale: 1.1;
+}
+.overlay {
+  display: none;
+}
+.overlay.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100em;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
