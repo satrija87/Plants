@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link type="image/x-icon" href="./assets/icons/icon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="overlay"></div>
+      <a href="" class="logo">
+
+        <img src="./assets/icons/logo.svg" alt="Plants" class="logo__pic">
+        <span class="logo__text">Plants</span>
+      </a>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#about">About us</a></li>
+          <li class="nav-link"><a href="#service">Service</a></li>
+          <li class="nav-link"><a href="#prices">Price</a></li>
+          <li class="nav-link"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="menu-button">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <div class="burger-menu ">
+          <div class="burger-header">
+            <div class="burger-logo">
+              <a href="" class="logo">
+                <img src="./assets/icons/logo.svg" alt="Plants" class="logo__pic">
+                <span class="logo__text">Plants</span>
+              </a>
+            </div>
+            <div class="burger-cross"></div>
+          </div>
+          <ul class="navigation-burger">
+            <li class="burger-nav-link"><a href="#home">Home</a></li>
+            <li class="burger-nav-link"><a href="#about">About us</a></li>
+            <li class="burger-nav-link"><a href="#service">Service</a></li>
+            <li class="burger-nav-link"><a href="#prices">Price</a></li>
+            <li class="burger-nav-link"><a href="#contacts">Contacts</a></li>
+          </ul>
+
+        </div>
+      </div>
+  </header>
+  <main>
+    <section class="welcome" id="home">
+      <div class="container welcome__container">
+        <img class="home-pic" src="../plants/assets/images/leafs.png" alt="leafs">
+
+        <div class="home-content">
+          <h1 class="home__title">We grow <span class="selected">plants</span> and give you oxygen</h1>
+          <p class="home__text text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <button class="button button_home">LEARN MORE</button>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="about-content">
+          <h2 class="about__title title">We are <span class="orange">professional experienced </span>gardeners</h2>
+          <p class="about__text text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        </div>
+        <img class="about-pic" src="assets/images/houseplant.jpg" alt="houseplant">
+      </div>
+    </section>
+    <section class="service" id="service">
+      <div class="container service__container">
+        <div class="service-header">
+          <h2 class="service__title title">Service and our projects</h2>
+          <div class="service__tags">
+            <button class="tag button gardens">Gardens</button>
+            <button class="tag button lawn">Lawn</button>
+            <button class="tag button planting">Planting</button>
+          </div>
+        </div>
+        <div class="service-cards">
+          <div class="card gardens ">
+            <img src="./assets/images/first.png" alt="first" class="card__image card__image1">
+
+            <h3 class="card__title ">Garden care</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+
+          </div>
+          <div class="card planting">
+            <img src="./assets/images/second.png" alt="second" class="card__image card__image2">
+            <h3 class="card__title">Planting</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+          </div>
+          <div class="card lawn">
+            <img src="./assets/images/third.png" alt="third" class="card__image card__image3">
+            <h3 class="card__title">Lawn care</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+          </div>
+          <div class="card planting">
+            <img src="./assets/images/fourth.png" alt="fourth" class="card__image card__image4">
+            <h3 class="card__title">Planting</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+          </div>
+          <div class="card gardens">
+            <img src="./assets/images/fifth.png" alt="fifth" class="card__image card__image5">
+            <h3 class="card__title">Garden care</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+          </div>
+          <div class="card planting">
+            <img src="./assets/images/sixth.png" alt="sixth" class="card__image card__image6">
+            <h3 class="card__title">Planting</h3>
+            <p class="card__text">Lorem Ipsum has been the industry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prices" id="prices">
+      <div class="container">
+        <div class="layout-2-column">
+          <div class="price-column">
+            <h2 class="prices__title">Prices</h2>
+            <div class="prices__formats">
+              <div class="price-basics price">
+                <div class="price__header ">
+                  <p class="price-format__tag">Basics</p>
+                  <span class="popup-button">
+                    <img class="price-basics popup-img" src="./assets/icons/arrow.svg" alt="arrow">
+                  </span>
+                </div>
+                <div class="price-basics  price__info">
+                  <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="price-dollars">
+                    <span class="dollars">$15</span> / per hour
+                  </p>
+                  <a href="#contacts"><button class="price-info-button">Order</button></a>
+                </div>
+              </div>
+              <div class="price-standart price">
+                <div class="price__header">
+                  <p class="price-format__tag">Standard</p>
+                  <span class="popup-button">
+                    <img class="price-standart  popup-img" src="./assets/icons/arrow.svg" alt="arrow">
+                  </span>
+                </div>
+                <div class="price-standart price__info">
+                  <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="price-dollars">
+                    <span class="dollars">$25</span> / per hour
+                  </p>
+                  <a href="#contacts"><button class="price-info-button">Order</button></a>
+                </div>
+
+              </div>
+              <div class="price-procare price">
+                <div class="price__header">
+                  <p class="price-format__tag">Pro care</p>
+                  <span class="popup-button">
+                    <img class="price-procare popup-img" src="./assets/icons/arrow.svg" alt="arrow">
+                  </span>
+                </div>
+                <div class="price-procare price__info">
+                  <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="price-dollars">
+                    <span class="dollars">$35</span> / per hour
+                  </p>
+                  <a href="#contacts"><button class="price-info-button">Order</button></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="contact-column">
+          <p class="contact-column__text">Our best <span class="green">gardeners</span> are ready to help you</p>
+          <button class="button contact-column__button">Contact us</button>
+          <img src="./assets/images/leafs2.png" alt="leafs" class="contact-column__img">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <img class="contacts__img" src="./assets/images/contact_woman.png" alt="woman">
+        <h2 class="contacts__title">Contact us</h2>
+        <div class="contacts__destination">
+          <div class="select-form ">
+            <p class="select-form__text">City</p>
+            <span class="select-form__button">
+              <img class="popup-service" src="./assets/icons/arrow.svg" alt="arrow">
+            </span>
+          </div>
+          <div class="select-block ">
+            <ul class="select__list ">
+              <li class="select__city-item">Canandaigua, NY</li>
+              <li class="select__city-item">New York City</li>
+              <li class="select__city-item">Yonkers, NY</li>
+              <li class="select__city-item">Sherrill, NY</li>
+            </ul>
+          </div>
+          <div class="adress-block">
+            <div class="adres-block__info">
+              <div class="adress__left-column">
+                <p class="adress-text__left">City:</p>
+                <p class="adress-text__left ">Phone:</p>
+                <p class="adress-text__left ">Office adress:</p>
+              </div>
+              <div class="adress__right-column">
+                <p class="adress-text__right adress-city"></p>
+                <p class="adress-text__right adress-phone"></p>
+                <p class="adress-text__right adress-office"></p>
+              </div>
+            </div>
+            <a href="tel:3" class="button adress-block__button">Call us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer__container">
+      <div class="rights">
+        <span>©</span>
+        <span>2022</span>
+        <a href="https://github.com/satrija87" class="rights-link">github</a>
+      </div>
+      <div class="link-RSSchool">
+        <a href="https://rs.school/js/" class="rights-link">Rolling Scopes School</a>
+      </div>
+      <div class="footer-icons">
+        <ul class="icons">
+          <li><a href="https://www.instagram.com" class="social_link"><img src="./assets/icons/insta.svg"
+                alt="instagram"></a></li>
+          <li><a href="https://www.facebook.com" class="social_link"><img src="./assets/icons/facebook.svg"
+                alt="facebook"></a></li>
+          <li><a href="https://www.twitter.com" class="social_link"><img src="./assets/icons/twitter.svg"
+                alt="twitter"></a></li>
+          <li><a href="https://www.pinterest.com" class="social_link"><img src="./assets/icons/pinterest.svg"
+                alt="pinterest"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>

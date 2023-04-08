@@ -1,0 +1,56 @@
+@import "../abstract/constants";
+@mixin font($size, $height, $style: normal, $weight: 700) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  font-style: $style;
+}
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin column($width) {
+  @include flex;
+  > * {
+    flex-basis: $width;
+  }
+}
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin right() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+@mixin media-tablet {
+  @media (max-width: 1439px) and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: 767px) and (min-width: $mobile-width) {
+    @content;
+  }
+}
+@mixin media-small {
+  @media (max-width: 379px) and (min-width: 320px) {
+    @content;
+  }
+}
+@mixin media-hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+@mixin keyframes($grow) {
+  @keyframes #{$grow} {
+    @content;
+  }
+}

@@ -1,0 +1,70 @@
+.welcome {
+  padding: 62px 0 52px;
+  background-color: $color-background;
+  @include media-tablet {
+    padding: 10px 0 70px;
+  }
+  @include media-mobile {
+    padding: 16px 0 24px;
+  }
+}
+.welcome__container {
+  @include flex;
+}
+
+.home-content {
+  width: 45%;
+  @include media-tablet {
+    order: 1;
+    width: 55%;
+  }
+
+  @include media-mobile {
+    width: 100%;
+  }
+  @include media-small {
+    width: 100%;
+  }
+}
+.home__title {
+  color: $color-description;
+  @include media-mobile {
+    margin-bottom: 13px;
+  }
+}
+.selected {
+  color: $color-primary;
+}
+.home__text {
+  @include font($size: 2rem, $height: 3.5rem, $weight: 400);
+  padding: 5px 5px 0 0;
+  margin-bottom: 48px;
+  color: $color-text;
+  @include media-tablet {
+    @include font(1.6rem, 2.5rem, $weight: 400);
+    padding: 0px 15px 0 5px;
+    letter-spacing: spacing 1px;
+    margin-bottom: 35px;
+  }
+  @include media-mobile {
+    padding-left: 0;
+    margin-bottom: 23px;
+    @include font(1.6rem, 2.5rem, $weight: 400);
+  }
+}
+.home-pic {
+  margin-top: -5px;
+  margin-left: -5px;
+  @include media-tablet {
+    content: url(../assets/images/leafs-tablet.png);
+    height: 30%;
+    order: 2;
+    margin-top: 17px;
+  }
+  @include media-mobile {
+    display: none;
+  }
+  @include media-small {
+    display: none;
+  }
+}

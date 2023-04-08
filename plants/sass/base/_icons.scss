@@ -1,0 +1,4 @@
+.social_link > img:hover {
+  @extend %transform;
+  @extend %transition;
+}

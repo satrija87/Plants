@@ -1,0 +1,200 @@
+@import "../abstract/mixins";
+.prices {
+  @extend %font-prim;
+  padding-bottom: 105px;
+  @include media-tablet {
+    padding-bottom: 83px;
+  }
+  @include media-mobile {
+    padding-bottom: 40px;
+  }
+}
+.layout-2-column {
+  @include column(37%);
+  flex-wrap: nowrap;
+
+  @include media-tablet {
+    @include column(50%);
+  }
+  @include media-mobile {
+    @include center;
+    flex-direction: column;
+  }
+  @include media-small {
+    flex-direction: column;
+  }
+}
+.contact-column__text {
+  @include font(4rem, 5rem);
+  text-align: end;
+  margin-bottom: 0;
+  @include media-tablet {
+    @include font(2.5rem, 3.5rem);
+  }
+  @include media-mobile {
+    @include font(2rem, 3.5rem);
+    text-align: center;
+  }
+  @include media-small {
+    @include font(1.5rem, 2.5rem);
+  }
+}
+.prices__title {
+  margin: 40px 0 60px 0;
+  @extend %font-prim;
+  @include font(4rem, 4.8rem);
+  @include media-tablet {
+    @include font(3.5rem, 4.236rem);
+    margin: 40px 0 57px 15px;
+  }
+  @include media-mobile {
+    @include font(2.5rem, 3.026rem);
+    margin: 27px 0 37px 0px;
+    text-align: center;
+  }
+  @include media-small {
+    @include font(3rem, 2.5rem);
+  }
+}
+.green {
+  color: $color-primary;
+}
+.prices__formats {
+  width: 73.5%;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  @include center;
+  flex-direction: column;
+  padding: 33px 40px;
+  gap: 31px;
+
+  @include media-tablet {
+    width: 100%;
+    padding: 32px 40px;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    padding: 29px 22px;
+    gap: 15px;
+  }
+  @include media-small {
+    width: 100%;
+  }
+}
+.price-format__tag {
+  margin: 0 0 6px 0;
+  @include font(2rem, 2rem);
+  @include media-mobile {
+    @include font(1.5rem, 2rem);
+  }
+  @include media-small {
+    @include font(1.5rem, 2rem);
+  }
+}
+.price {
+  background-color: $color-background;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px 40px 6px 40px;
+  flex-direction: column;
+  @include flex;
+  @include media-mobile {
+    flex-wrap: nowrap;
+    padding: 14px 41px 6px 29px;
+    overflow: hidden;
+    align-items: center;
+  }
+  &_active{
+    background-color: #D6E7D2;
+  }
+}
+.contact-column {
+  @include right;
+  gap: 38px;
+  @include media-tablet {
+    padding-top: 115px;
+    gap: 26px;
+  }
+  @include media-mobile {
+    flex-basis: 70%;
+    align-items: center;
+    padding: 0 40px;
+    gap: 20px;
+  }
+}
+
+.contact-column__img {
+  margin-right: -10px;
+  @include media-mobile {
+    display: none;
+  }
+
+  @include media-small {
+    display: none;
+  }
+}
+.popup-img {
+  background-color: #d9d9d9;
+  padding: 8px;
+  border-radius: 10px;
+  @include media-mobile {
+    vertical-align: middle;
+  }
+  &_active {
+    content: url("../assets/icons/arrow1.svg");
+
+    background-color: #aea1a1;
+  }
+}
+.price__header {
+  padding-bottom: 6px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.price__info {
+  height: 0;
+  visibility: hidden;
+
+  border-top: 0.5px solid #aea1a1;
+  animation: grow 5s;
+  &_active {
+    height: 100%;
+
+    visibility: visible;
+  }
+
+  p {
+    margin: 6px 0 6px 0;
+    color: $color-description;
+    @include font(1rem, 1rem, $weight: 300);
+    @extend %font-prim;
+  }
+  .price-dollars {
+    color: black;
+    @include font(1.2rem, 2rem, $weight: 400);
+    @extend %font-prim;
+  }
+}
+
+.dollars {
+  color: $color-additional;
+  @include font(1.6rem, 2rem);
+  @extend %font-prim;
+}
+.price-info-button {
+  margin-bottom: 6px;
+  @include font(1.4rem, 2rem);
+  @extend %font-prim;
+  border-radius: 10px;
+  color: $color-description;
+  padding: 3px 20px;
+  border: none;
+  background-color: $color-light;
+}
+.popup-button {
+  display: flex;
+  align-items: center;
+}

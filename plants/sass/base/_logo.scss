@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-mobile {
+    padding-top: 15px;
+  }
+}
+.logo__pic {
+  margin-bottom: 9px;
+  &:hover {
+    @extend %transform;
+    @extend %transition;
+  }
+}
+.logo__text {
+  vertical-align: middle;
+  @include font(1.6rem, 2.1rem, $weight: 400);
+  @extend %font-add;
+}

@@ -1,0 +1,14 @@
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+
+  @include media-tablet {
+    padding: 0 50px;
+  }
+  @include media-mobile {
+    padding: 0 24px;
+  }
+  @include media-small {
+    padding: 0 15px;
+  }
+}
